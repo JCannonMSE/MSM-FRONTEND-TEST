@@ -5,7 +5,7 @@
 
 ## Task 1
 
-*  Using Javascript GET the ticker information back from the endpoint ( https://blockchain.info/ticker ) and in an organised way present this information back in browser using Semantic HTML, it is expected that you will also style your markup, the look and feel is left for you, although basic responsiveness is expected.  For the purpose of this exercise the script/styles should work in the latest copy of Chrome
+*  Using Javascript GET the ticker information back from the endpoint https://blockchain.info/ticker and in an organised way present this information back in browser using Semantic HTML, it is expected that you will also style your markup, the look and feel is left for you, although basic responsiveness is expected.  For the purpose of this exercise the script/styles should work in the latest copy of Chrome
 
 *  This information changes every few seconds, please build in a mechanism for updating and displaying the latest available information.
 

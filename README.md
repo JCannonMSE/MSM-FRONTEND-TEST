@@ -1,24 +1,15 @@
-# Frontend Developer test
+# Full Stack Developer test
 
-> We have a simple [Bitcoin exchange API](https://blockchain.info/api/exchange_rates_api)  there are two endpoints that we would like you to use to complete tasks 1 & 2. N.B. You have 1 hour to complete as much of this exercise as possible, don’t worry if you don’t complete it!!.  Please use whichever libraries/frameworks you deem appropriate to complete this exercise.
-
+> We have a simple [Bitcoin exchange API](https://blockchain.info/ticker) we would like you to build a proxy that sorts the returned values by currency name (Backend) and then a UI that displays these values on a web page.
+> To run the application you can run the TestApplication.java file or run ./gradlew bootRun from the command line
 
 ## Task 1
 
-*  Using Javascript GET the ticker information back from the endpoint https://blockchain.info/ticker and in an organised way present this information back in browser using Semantic HTML, it is expected that you will also style your markup, the look and feel is left for you, although basic responsiveness is expected.  For the purpose of this exercise the script/styles should work in the latest copy of Chrome
-
-*  This information changes every few seconds, please build in a mechanism for updating and displaying the latest available information.
+* Using the code examples provided finish the service and it's tests so that the tests pass and the information available can be obtained from a reasonable URL.
 
 ## Task 2
+> The starting page is available at http://localhost:8080/index.html
 
-> Include a basic form to allow a user to perform a currency conversion from one of the currencies returned from step 1 only and then display the resulting value.  N.B. it is not expected that you calculate this client-side, instead please use the API.  https://blockchain.info/tobtc?currency=CUR&value=20
+*  Using Javascript GET the ticker information back from the endpoint constructed in task 1 and in an organised way present this information back in browser using Semantic HTML, it is expected that you will also style your markup, the look and feel is left for you, although basic responsiveness is expected.  For the purpose of this exercise the script/styles should work in the latest copy of Chrome
 
- 
-
-* I Should not be able to request a currency that does not feature in the response from Task 1
-
-* The amount should be numeric only
-
-* The amount that I wish to convert should be greater than 0 and less than 1,000,000 in the selected currency
-
-* If I supply an invalid set of request values then I should be notified and the API request should not happen.
+*  This information changes every few seconds, please build in a mechanism for updating and displaying the latest available information.

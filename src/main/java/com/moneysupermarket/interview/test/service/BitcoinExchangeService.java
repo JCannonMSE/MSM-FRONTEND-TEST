@@ -23,14 +23,13 @@ public class BitcoinExchangeService {
 
 	private static final TypeReference<HashMap<String, BlockchainInfoResponse>> TYPE_REFERENCE = new TypeReference<HashMap<String, BlockchainInfoResponse>>() {};
 
-	public List<BlockchainInfoResponse> getBitcoinsFromBlockchain() {
+	public Map<String, BlockchainInfoResponse> getBitcoinsFromBlockchain() {
 		ObjectMapper objectMapper = new ObjectMapper();
 		try (CloseableHttpClient httpClient = HttpClientBuilder.create().build()) {
 			HttpGet httpGet = new HttpGet(HTTPS_BLOCKCHAIN_INFO_TICKER);
 			HttpResponse response = httpClient.execute(httpGet);
-			Map<String, BlockchainInfoResponse> mappedValues = objectMapper.readValue(response.getEntity().getContent(),
+			return objectMapper.readValue(response.getEntity().getContent(),
 					TYPE_REFERENCE);
-			return new ArrayList<>(mappedValues.values());
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}

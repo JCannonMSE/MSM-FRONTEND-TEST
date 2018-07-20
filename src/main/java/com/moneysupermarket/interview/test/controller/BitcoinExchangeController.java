@@ -21,5 +21,6 @@ public class BitcoinExchangeController {
 	@GetMapping(path="")
 	public BlockchainInfoResponse getBlockchainCurrency(@PathVariable("currency") String currency){
 		return null;
+		
 	}
 }

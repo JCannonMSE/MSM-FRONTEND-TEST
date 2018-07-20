@@ -25,6 +25,8 @@ private Double sell;
 @JsonProperty("symbol")
 private String symbol;
 
+public BlockchainInfoResponse() {}
+
 public BlockchainInfoResponse(Double _15m, Double last, Double buy, Double sell, String symbol) {
 	super();
 	this._15m = _15m;
